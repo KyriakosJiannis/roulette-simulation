@@ -37,7 +37,7 @@ def add_bet():
 
 # User inputs for adding bets
 bet_choice = st.selectbox('Choose your bet condition:', list(bet_conditions.keys()), key='bet_choice')
-bet_amount = st.number_input('Bet Amount:', min_value=1, value=5, format='%d', key='bet_amount')
+bet_amount = st.number_input('Bet Amount:', min_value=0.5, value=5, format='%d', key='bet_amount')
 st.button('Add Bet', on_click=add_bet)
 
 # Display current bets
